@@ -3,9 +3,18 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
-// Dichiara la funzione qui.
+// // Dichiara la funzione qui.
+// function firstLetters(namesArray){
+//   const lettersArray = [];
+//   for(i=0; i<namesArray.length; i++){
+//     lettersArray.push(namesArray[i][0]);
+//   }
+  
+//   return lettersArray;
+// }
 
-function firstLetters(namesArray){
+// Risoluzione con arrow function
+firstLetters = (namesArray) => {
   const lettersArray = [];
   for(i=0; i<namesArray.length; i++){
     lettersArray.push(namesArray[i][0]);
@@ -13,6 +22,7 @@ function firstLetters(namesArray){
   
   return lettersArray;
 }
+
 // Invoca la funzione qui e stampa il risultato in console
 let letters = firstLetters(names);
 console.log(letters);

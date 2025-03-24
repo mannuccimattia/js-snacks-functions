@@ -3,8 +3,23 @@
 const word = 'javascript';
 
 
-// Dichiara la funzione qui.
-function checkVowels(string){
+// // Dichiara la funzione qui.
+// function checkVowels(string){
+//   let vowelNum = 0;
+//   let vowels = ["a", "e", "i", "o", "u"];
+//   for(i=0; i<string.length; i++){
+//     for(j=0; j<vowels.length; j++){
+//       if(string[i].toLowerCase() === vowels[j]){
+//         vowelNum += 1;
+//       }
+//     }
+//   }
+
+//   return vowelNum;
+// }
+
+// Risoluzione con arrow function
+checkVowels = (string) => {
   let vowelNum = 0;
   let vowels = ["a", "e", "i", "o", "u"];
   for(i=0; i<string.length; i++){

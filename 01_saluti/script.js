@@ -3,12 +3,15 @@
 const userName = 'Mario';
 
 
-// Dichiara la funzione qui.
-function helloUser(user){
-  return `Ciao ${user}`;
-}
+// // Dichiara la funzione qui.
+// function helloUser(user){
+//   return `Ciao ${user}`;
+// }
 
-// Invoca la funzione qui e stampa il risultato in console
+// Risoluzione con arrow function.
+helloUser = (user) => `Ciao ${user}`;
+
+// // Invoca la funzione qui e stampa il risultato in console
 let welcomeUser = helloUser(userName);
 console.log(welcomeUser);
 

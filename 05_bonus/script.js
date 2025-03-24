@@ -8,8 +8,22 @@ e buonasera se è sera (oltre le 17)
 const name = 'Mario';
 
 
-// Dichiara la funzione qui.
-function betterWelcome(user){
+// // Dichiara la funzione qui.
+// function betterWelcome(user){
+//   const date = parseInt(new Date().toLocaleTimeString("it-IT").substring(0,2));
+//   if(date < 13){
+//     console.log("Buongiorno", user);
+//   }
+//   else if(date > 17){
+//     console.log("Buonasera", user);
+//   }
+//   else{
+//     console.log("Buon pomeriggio", user);
+//   }
+// }
+
+// Risoluzione con arrow function
+betterWelcome = (user) => {
   const date = parseInt(new Date().toLocaleTimeString("it-IT").substring(0,2));
   if(date < 13){
     console.log("Buongiorno", user);

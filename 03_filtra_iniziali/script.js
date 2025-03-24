@@ -3,8 +3,20 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
-// Dichiara la funzione qui.
-function checkInitials(array, letter){
+// // Dichiara la funzione qui.
+// function checkInitials(array, letter){
+//   const initials = [];
+//   for(i=0; i<array.length; i++){
+//     if(array[i][0] === letter){
+//       initials.push(array[i]);
+//     }
+//   }
+
+//   return initials;
+// }
+
+// Risoluzione con arrow function
+checkInitials = (array, letter) => {
   const initials = [];
   for(i=0; i<array.length; i++){
     if(array[i][0] === letter){
