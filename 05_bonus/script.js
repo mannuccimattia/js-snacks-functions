@@ -14,7 +14,7 @@ const name = 'Mario';
 //   if(date < 13){
 //     console.log("Buongiorno", user);
 //   }
-//   else if(date > 17){
+//   else if(date >= 17){
 //     console.log("Buonasera", user);
 //   }
 //   else{
@@ -28,7 +28,7 @@ betterWelcome = (user) => {
   if(date < 13){
     console.log("Buongiorno", user);
   }
-  else if(date > 17){
+  else if(date >= 17){
     console.log("Buonasera", user);
   }
   else{
