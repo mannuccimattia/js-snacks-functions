@@ -9,10 +9,21 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+function betterWelcome(user){
+  const date = parseInt(new Date().toLocaleTimeString("it-IT").substring(0,2));
+  if(date < 13){
+    console.log("Buongiorno", user);
+  }
+  else if(date > 17){
+    console.log("Buonasera", user);
+  }
+  else{
+    console.log("Buon pomeriggio", user);
+  }
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+betterWelcome(name);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
